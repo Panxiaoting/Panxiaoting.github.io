@@ -453,6 +453,172 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/29/sql/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="我跨過山和大海">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Panxiaoting_Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/29/sql/" itemprop="url">关系型数据库和非关系型数据库的特性以及各自的优缺点</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-29T10:56:20+08:00">
+                2017-11-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据库/" itemprop="url" rel="index">
+                    <span itemprop="name">数据库</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <a id="more"></a>
+<p>关系型数据库</p>
+<h2 id="SQLite、Oracle、mysql"><a href="#SQLite、Oracle、mysql" class="headerlink" title="SQLite、Oracle、mysql"></a>SQLite、Oracle、mysql</h2><ul>
+<li>特性：<br>  1、关系型数据库，是指采用了关系模型来组织数据的数据库；<br>  2、关系型数据库的最大特点就是事务的一致性；<br>  3、简单来说，关系模型指的就是二维表格模型，而一个关系型数据库就是由二维表及其之间的联系所组成的一个数据组织。</li>
+</ul>
+<ul>
+<li><p>优点：<br>  1、容易理解：二维表结构是非常贴近逻辑世界一个概念，关系模型相对网状、层次等其他模型来说更容易理解；<br>  2、使用方便：通用的SQL语言使得操作关系型数据库非常方便；<br>  3、易于维护：丰富的完整性(实体完整性、参照完整性和用户定义的完整性)大大减低了数据冗余和数据不一致的概率；<br>  4、支持SQL，可用于复杂的查询。</p>
+</li>
+<li><p>缺点：<br>  1、为了维护一致性所付出的巨大代价就是其读写性能比较差；<br>  2、固定的表结构；<br>  3、高并发读写需求；<br>  4、海量数据的高效率读写；    </p>
+</li>
+</ul>
+<p>非关系型数据库</p>
+<h2 id="MongoDb、redis、HBase"><a href="#MongoDb、redis、HBase" class="headerlink" title="MongoDb、redis、HBase"></a>MongoDb、redis、HBase</h2><ul>
+<li><p>特性：<br>  1、使用键值对存储数据；<br>  2、分布式；<br>  3、一般不支持ACID特性；<br>  4、非关系型数据库严格上不是一种数据库，应该是一种数据结构化存储方法的集合。</p>
+</li>
+<li><p>优点：<br>  1、无需经过sql层的解析，读写性能很高；<br>  2、基于键值对，数据没有耦合性，容易扩展；<br>  3、存储数据的格式：nosql的存储格式是key,value形式、文档形式、图片形式等等，文档形式、图片形式等等，而关系型数据库则只支持基础类型。</p>
+</li>
+<li><p>缺点：<br>  1、不提供sql支持，学习和使用成本较高；<br>  2、无事务处理，附加功能bi和报表等支持也不好；</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+<div>
+  
+</div>
+
+    
+
+
+    
+
+    
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/28/Hexo-Insert-picture/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -792,7 +958,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -803,7 +969,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -814,7 +980,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
