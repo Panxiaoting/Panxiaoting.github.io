@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="分享,python,爬虫,学习,">
 
 
 
@@ -86,16 +86,18 @@
 
 
 
-<meta name="description" content="原谅我这一生不羁放纵爱自由">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Panxiaoting_Blog">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="前天写了一篇博客整理了一下 python 多进程 和 多线程 的一些概念和优缺点特效，后来被一个同事问到什么是python 协程，回答不出一二，然后被疯狂嘲讽了一番 😅   后来去网上查阅了很多资料，看了很多大神i写的博文，学习到很多，在这里我记录一下。">
+<meta name="keywords" content="分享,python,爬虫,学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python协程">
+<meta property="og:url" content="http://yoursite.com/2017/12/01/python协程/index.html">
 <meta property="og:site_name" content="Panxiaoting_Blog">
-<meta property="og:description" content="原谅我这一生不羁放纵爱自由">
+<meta property="og:description" content="前天写了一篇博客整理了一下 python 多进程 和 多线程 的一些概念和优缺点特效，后来被一个同事问到什么是python 协程，回答不出一二，然后被疯狂嘲讽了一番 😅   后来去网上查阅了很多资料，看了很多大神i写的博文，学习到很多，在这里我记录一下。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-29T08:03:06.470Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Panxiaoting_Blog">
-<meta name="twitter:description" content="原谅我这一生不羁放纵爱自由">
+<meta name="twitter:title" content="python协程">
+<meta name="twitter:description" content="前天写了一篇博客整理了一下 python 多进程 和 多线程 的一些概念和优缺点特效，后来被一个同事问到什么是python 协程，回答不出一二，然后被疯狂嘲讽了一番 😅   后来去网上查阅了很多资料，看了很多大神i写的博文，学习到很多，在这里我记录一下。">
 
 
 
@@ -125,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/">
+  <link rel="canonical" href="http://yoursite.com/2017/12/01/python协程/">
 
 
 
 
 
-  <title>归档 | Panxiaoting_Blog</title>
+  <title>python协程 | Panxiaoting_Blog</title>
   
 
 
@@ -150,7 +152,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -286,247 +288,256 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/01/python协程/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="我跨過山和大海">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Panxiaoting_Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">python协程</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-01T14:36:37+08:00">
+                2017-12-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 6 篇日志。 继续努力。
-      </span>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2017">2017</h1>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/01/python协程/" itemprop="url">
-              
-                <span itemprop="name">python协程</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-12-01T14:36:37+08:00" content="2017-12-01">
-          12-01
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/30/jincheng/" itemprop="url">
-              
-                <span itemprop="name">python  进程和线程</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-11-30T11:33:17+08:00" content="2017-11-30">
-          11-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/29/sql/" itemprop="url">
-              
-                <span itemprop="name">关系型数据库和非关系型数据库的特性以及各自的优缺点</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-11-29T10:56:20+08:00" content="2017-11-29">
-          11-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <blockquote class="blockquote-center"><p>前天写了一篇博客整理了一下 python 多进程 和 多线程 的一些概念和优缺点特效，后来被一个同事问到什么是python 协程，回答不出一二，然后被疯狂嘲讽了一番 😅   后来去网上查阅了很多资料，看了很多大神i写的博文，学习到很多，在这里我记录一下。</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="协程"><a href="#协程" class="headerlink" title="协程"></a>协程</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>  　　协程，又称微线程，纤程，英文名Coroutine。协程的作用，是在执行函数A时，可以随时中断，去执行函数B，然后中断继续执行函数A（可以自由切换）。但这一过程并不是函数调用（没有调用语句），这一整个过程看似像多线程，然而协程只有一个线程执行。
+  　　</p>
+<h3 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h3><ul>
+<li>执行效率极高，因为子程序切换（函数）不是线程切换，由程序自身控制，没有切换线程的开销。所以与多线程相比，线程的数量越多，协程性能的优势越明显。</li>
+</ul>
+<ul>
+<li><p>不需要多线程的锁机制，因为只有一个线程，也不存在同时写变量冲突，在控制共享资源时也不需要加锁，因此执行效率高很多。</p>
+<p>说明：协程可以处理IO密集型程序的效率问题，但是处理CPU密集型不是它的长处，如要充分发挥CPU利用率可以结合多进程+协程。</p>
+</li>
+</ul>
+<h2 id="Pyrhon-2-x-协程"><a href="#Pyrhon-2-x-协程" class="headerlink" title="  Pyrhon 2.x 协程"></a>  Pyrhon 2.x 协程</h2><h3 id="Gevent"><a href="#Gevent" class="headerlink" title="Gevent"></a>Gevent</h3><p>  gevent是第三方库，通过greenlet实现协程，其基本思想：<br>  当一个greenlet遇到IO操作时，比如访问网络，就自动切换到其他的greenlet，等到IO操作完成，再在适当的时候切换回来继续执行。由于IO操作非常耗时，经常使程序处于等待状态，有了gevent为我们自动切换协程，就保证总有greenlet在运行，而不是等待IO。</p>
+<p>我们先来看看一个简单的爬虫例子，在python3 的环境运行的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">from urllib.request import urlopen</span><br><span class="line">import gevent</span><br><span class="line">from gevent import monkey;monkey.patch_all()</span><br><span class="line"></span><br><span class="line">def get_body(i):</span><br><span class="line">    print(&quot;start&quot;,i)</span><br><span class="line">    urlopen(&quot;http://cn.bing.com&quot;)</span><br><span class="line">    print(&quot;end&quot;,i)</span><br><span class="line">tasks=[gevent.spawn(get_body,i) for i in range(3)]</span><br><span class="line">gevent.joinall(tasks)</span><br></pre></td></tr></table></figure>
+<p>运行结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">start 0</span><br><span class="line">start 1</span><br><span class="line">start 2</span><br><span class="line">end 0</span><br><span class="line">end 2</span><br><span class="line">end 1</span><br></pre></td></tr></table></figure>
+<p>　　说明：从执行结果上来看，执行get_body的顺序应该先是输出”start”，然后执行到 urlopen 时碰到IO堵塞，则会自动切换运行下一个程序（继续执行get_body输出start），直到 urlopen 返回结果，再执行end。也就是说，程序没有等待 urlopen 请求网站返回结果，而是直接先跳过了，等待执行完毕再回来获取返回值。值得一提的是，在此过程中，只有一个线程在执行，因此这与多线程的概念是不一样的。
+　　
+　　
+　　</p>
+<hr>
+<p>换成多线程的代码看看：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">import threading</span><br><span class="line">from urllib.request import urlopen</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def get_body(i):</span><br><span class="line">    print(&quot;start&quot;,i)</span><br><span class="line">    urlopen(&quot;http://cn.bing.com&quot;)</span><br><span class="line">    print(&quot;end&quot;,i)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">for i in range(3):</span><br><span class="line">    t = threading.Thread(target=get_body,args=(i,))</span><br><span class="line">    t.start()</span><br></pre></td></tr></table></figure>
+<p>执行结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">start 0</span><br><span class="line">start 1</span><br><span class="line">start 2</span><br><span class="line">end 1</span><br><span class="line">end 0</span><br><span class="line">end 2</span><br></pre></td></tr></table></figure>
+<p>  说明：从结果来看，多线程与协程的效果一样，都是达到了IO阻塞时切换的功能。不同的是，多线程切换的是线程（线程间切换），协程切换的是上下文（可以理解为执行的函数）。而切换线程的开销明显是要大于切换上下文的开销，因此当线程越多，协程的效率就越比多线程的高。（猜想多进程的切换开销应该是最大的）</p>
+<h3 id="Gevent使用说明"><a href="#Gevent使用说明" class="headerlink" title="Gevent使用说明"></a>Gevent使用说明</h3><ul>
+<li><p>monkey可以使一些阻塞的模块变得不阻塞，机制：遇到IO操作则自动切换，手动切换可以用gevent.sleep(0)（将爬虫代码换成这个，效果一样可以达到切换上下文）</p>
+</li>
+<li><p>gevent.spawn 启动协程，参数为函数名称，参数名称</p>
+</li>
+<li><p>gevent.joinall 停止协程</p>
+</li>
+</ul>
+<h3 id="asynico-await"><a href="#asynico-await" class="headerlink" title="asynico/await"></a>asynico/await</h3><p>  为了简化并更好地标识异步IO，从Python 3.5开始引入了新的语法async和await，可以让coroutine的代码更简洁易读。</p>
+<p>  ls：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; import asyncio</span><br><span class="line">&gt;&gt;&gt; async def test(i):</span><br><span class="line">...     print(&quot;test_1&quot;,i)</span><br><span class="line">...     await asyncio.sleep(1)</span><br><span class="line">...     print(&quot;test_2&quot;,i)</span><br><span class="line">... </span><br><span class="line">&gt;&gt;&gt; loop = asyncio.get_event_loop()</span><br><span class="line">&gt;&gt;&gt; tasks=[test(i) for i in range(5)]</span><br><span class="line">&gt;&gt;&gt; loop.run_until_complete(asyncio.wait(tasks))</span><br></pre></td></tr></table></figure>
+<p>输出结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">test_1 2</span><br><span class="line">test_1 0</span><br><span class="line">test_1 3</span><br><span class="line">test_1 4</span><br><span class="line">test_1 1</span><br><span class="line">test_2 2</span><br><span class="line">test_2 0</span><br><span class="line">test_2 3</span><br><span class="line">test_2 4</span><br><span class="line">test_2 1</span><br><span class="line">(&#123;&lt;Task finished coro=&lt;test() done, defined at &lt;stdin&gt;:1&gt; result=None&gt;, &lt;Task finished coro=&lt;test() done, defined at &lt;stdin&gt;:1&gt; result=None&gt;, &lt;Task finished coro=&lt;test() done, defined at &lt;stdin&gt;:1&gt; result=None&gt;, &lt;Task finished coro=&lt;test() done, defined at &lt;stdin&gt;:1&gt; result=None&gt;, &lt;Task finished coro=&lt;test() done, defined at &lt;stdin&gt;:1&gt; result=None&gt;&#125;, set())</span><br></pre></td></tr></table></figure>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/28/Build-blog/" itemprop="url">
-              
-                <span itemprop="name">搭建一个属于自己的 blog 空间</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-11-28T17:35:19+08:00" content="2017-11-28">
-          11-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/28/Hexo-Insert-picture/" itemprop="url">
-              
-                <span itemprop="name">Hexo_Insert_picture(hexo 插入图片方法)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-11-28T15:19:43+08:00" content="2017-11-28">
-          11-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/27/PanXt727-Blong/" itemprop="url">
-              
-                <span itemprop="name">Markdown （md）语法</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-11-27T12:21:05+08:00" content="2017-11-27">
-          11-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+  
+</div>
+
+    
+
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="我跨過山和大海 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="我跨過山和大海 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/分享/" rel="tag"><i class="fa fa-tag"></i> 分享</a>
+          
+            <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a>
+          
+            <a href="/tags/爬虫/" rel="tag"><i class="fa fa-tag"></i> 爬虫</a>
+          
+            <a href="/tags/学习/" rel="tag"><i class="fa fa-tag"></i> 学习</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/11/30/jincheng/" rel="next" title="python  进程和线程">
+                <i class="fa fa-chevron-left"></i> python  进程和线程
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -534,6 +545,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -554,8 +569,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -633,6 +657,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#协程"><span class="nav-number">1.</span> <span class="nav-text">协程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#概念"><span class="nav-number">1.1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#优势"><span class="nav-number">1.2.</span> <span class="nav-text">优势</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pyrhon-2-x-协程"><span class="nav-number">2.</span> <span class="nav-text">  Pyrhon 2.x 协程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Gevent"><span class="nav-number">2.1.</span> <span class="nav-text">Gevent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gevent使用说明"><span class="nav-number">2.2.</span> <span class="nav-text">Gevent使用说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#asynico-await"><span class="nav-number">2.3.</span> <span class="nav-text">asynico/await</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -776,6 +816,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
