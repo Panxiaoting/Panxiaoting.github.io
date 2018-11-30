@@ -110,7 +110,7 @@
 <meta property="og:image" content="http://yoursite.com/2017/12/02/爬虫常见库设置代理/15.jpeg">
 <meta property="og:image" content="http://yoursite.com/2017/12/02/爬虫常见库设置代理/16.jpeg">
 <meta property="og:image" content="http://yoursite.com/2017/12/02/爬虫常见库设置代理/17.jpeg">
-<meta property="og:updated_time" content="2018-11-29T11:40:58.738Z">
+<meta property="og:updated_time" content="2018-11-30T02:15:08.384Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="几个常见的爬虫库设置代理IP的方法">
 <meta name="twitter:description" content="分享 python  几个常见的爬虫库设置代理IP的方法">
@@ -411,7 +411,7 @@
         <blockquote class="blockquote-center"><p>分享 python  几个常见的爬虫库设置代理IP的方法</p>
 </blockquote>
 <a id="more"></a>
-<h2 id="首先获取一个可用的IP"><a href="#首先获取一个可用的IP" class="headerlink" title="首先获取一个可用的IP"></a>首先获取一个可用的IP</h2><p>在做测试之前，我们需要先获取一个可用代理，搜索引擎搜索“代理”关键字，就可以看到有许多代理服务网站，在网站上会有很多免费代理，<a href="www.xicidaili.com/">比如西刺</a>这里列出了很多免费代理，但是这些免费代理大多数情况下都是不好用的，所以比较靠谱的方法是购买付费代理，很多网站都有售卖，数量不用多，买一个稳定可用的即可，可以自行选购。  </p>
+<h2 id="首先获取一个可用的IP"><a href="#首先获取一个可用的IP" class="headerlink" title="首先获取一个可用的IP"></a>首先获取一个可用的IP</h2><p>在做测试之前，我们需要先获取一个可用代理，搜索引擎搜索“代理”关键字，就可以看到有许多代理服务网站，在网站上会有很多免费代理，<a href="https://www.xicidaili.com/" target="_blank" rel="noopener">比如西刺</a>这里列出了很多免费代理，但是这些免费代理大多数情况下都是不好用的，所以比较靠谱的方法是购买付费代理，很多网站都有售卖，数量不用多，买一个稳定可用的即可，可以自行选购。  </p>
 <p>或者如果我们本机有相关代理软件的话，软件一般会在本机创建 HTTP 或 SOCKS 代理服务，直接使用此代理也可以。  </p>
 <p>如果机机器安装了一部代理软件，它会在本地端口（例如：9743）上创建 HTTP 代理服务，也就是代理为 127.0.0.1:9743，另外还会在 9742 端口创建 SOCKS 代理服务，也就是代理为 127.0.0.1:9742，我只要设置了这个代理就可以成功将本机 IP 切换到代理软件连接的服务器的 IP了。  </p>
 <p>设置代理后测试的网站为：//httpbin.org/get，访问该站点可以得到请求的一些相关信息，其中 origin 字段就是客户端的 IP，我们可以根据它来判断代理是否设置成功，也就是是否成功伪装了IP。</p>
@@ -434,11 +434,11 @@
 <p>结果的 origin 字段同样为代理的 IP，设置代理成功。 </p>
 <h3 id="Requests"><a href="#Requests" class="headerlink" title="Requests"></a>Requests</h3><p>对于 Requests 来说，代理设置更加简单，我们只需要传入 proxies 参数即可。<br>还是以上例中的代理为例，我们来看下 Requests 的代理的设置： </p>
 <p><img src="6.jpeg" alt=""></p>
-<div class="note primary"><p>proxy = \’username:<a href="mailto:password@127.0.0.1" target="_blank" rel="noopener">password@127.0.0.1</a>:9743\’<br>和 Urllib 一样，只需要将 username 和 password 替换即可。</p></div> 
+<div class="note primary"><p>proxy = ‘username:<a href="mailto:password@127.0.0.1" target="_blank" rel="noopener">password@127.0.0.1</a>:9743’<br>和 Urllib 一样，只需要将 username 和 password 替换即可。</p></div> 
 <p>如果需要使用 SOCKS5 代理，则可以使用如下方式：</p>
 <p><img src="8.jpeg" alt=""></p>
 <p>在这里需要额外安装一个 Socks 模块，命令如下：</p>
-<div class="note primary"><p>pip3 install”requests[socks]”</p></div> 
+<div class="note primary"><p>pip3 instal requests[socks</p></div> 
 <p>运行结果是完全相同的：</p>
 <p><img src="9.jpeg" alt=""></p>
 <p>另外还有一种设置方式，和 Urllib 中的方法相同，使用 socks 模块，也需要像上文一样安装该库，设置方法如下：</p>
